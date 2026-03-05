@@ -1,4 +1,4 @@
-package com.langfundamental;
+package com.langfundamental.constructors;
 
 public class StudentMarks {
 	String sName;

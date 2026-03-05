@@ -1,4 +1,4 @@
-package com.langfundamental;
+package com.langfundamental.constructors;
 
 import java.util.Scanner;
 
@@ -8,8 +8,8 @@ public class PracticeQuestion3 {
 	double marks1;
 	double marks2;
 	double marks3;
-	double totalMarks;
-	double average;
+//	double totalMarks;
+//	double average;
 
 	PracticeQuestion3() {
 		System.out.println("Enter Marks1:");
@@ -18,17 +18,26 @@ public class PracticeQuestion3 {
 		marks2 = sc.nextDouble();
 		System.out.println("Enter Marks3:");
 		marks3 = sc.nextDouble();
-		totalMarks = marks1 + marks2 + marks3;
-		average = totalMarks / 3;
-		System.out.println("Total Marks:" + totalMarks);
-		System.out.println("Average Marks:" + average);
+//		totalMarks = marks1 + marks2 + marks3;
+//		average = totalMarks / 3;
+//		System.out.println("Total Marks:" + totalMarks);
+//		System.out.println("Average Marks:" + average);
 	}
 
 	public static void main(String[] args) {
 		PracticeQuestion3 p = new PracticeQuestion3();
-
 		PracticeQuestion3 p1 = new PracticeQuestion3();
+		p.show();
+		p1.show();
 
 	}
 
+	void show() {
+		System.out.println(marks1 + marks2 + marks3);
+	}
+
+//	void show() {
+//		System.out.println("Total Marks:" + totalMarks);
+//		System.out.println("Average Marks:" + average);
+//	}
 }

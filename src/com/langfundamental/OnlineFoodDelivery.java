@@ -15,6 +15,7 @@ public class OnlineFoodDelivery {
 		double gstAmount = p1.addGst(basicAmount);
 		double finalAmount=p1.addDeliveryCharges(gstAmount);
 		p1.printBill(finalAmount);
+		sc.close();
 	}
 
 	double calculateItemTotal(double price, double quantity) {
