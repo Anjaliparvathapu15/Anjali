@@ -24,8 +24,8 @@ public class CopyConstructor {
 		this.budget=budget;
 		
 	}
-	CopyConstructor(CopyConstructor c1,String movieName){
-		this(c1,c1.budget);
+	CopyConstructor(CopyConstructor c4,String movieName){
+		this(c4,c4.budget);
 		this.movieName=movieName;
 		}
 
