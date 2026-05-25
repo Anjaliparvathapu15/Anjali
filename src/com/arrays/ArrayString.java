@@ -14,13 +14,10 @@ public class ArrayString {
 			name[i] = sc.next();
 		}
 		for (String n : name) {
-
 			if (n.toLowerCase().startsWith("a") && n.endsWith("i"))
-
 			{
 				System.out.println(n);
 			}
-
 		}
 		sc.close();
 	}
