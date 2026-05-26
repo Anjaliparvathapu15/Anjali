@@ -1,6 +1,6 @@
 package com.arrays;
 
-public class SortingArray {
+public class SortingArrayAsc {
 
 	public static void main(String[] args) {
 		int[] arr = { 11, 33, 44, 5, 6, 8, 9 };
