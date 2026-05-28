@@ -14,7 +14,7 @@ class CountDuplicates {
 			// Check whether element appeared before
 			for (int k = 0; k < i; k++) {
 
-				if (arr[i] == arr[k]) {
+				if (arr[k] == arr[i]) {
 					alreadyChecked = true;
 					break;
 				}
