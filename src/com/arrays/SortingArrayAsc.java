@@ -12,7 +12,6 @@ public class SortingArrayAsc {
 					arr[j] = arr[j + 1];
 					arr[j + 1] = temp;
 				}
-
 			}
 
 		}
