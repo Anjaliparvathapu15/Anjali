@@ -21,6 +21,7 @@ public class FactorsOfANumber {
 				System.out.print(i + " ");
 			}
 		}
+		System.out.println(n);
 		sc.close();
 	}
 
