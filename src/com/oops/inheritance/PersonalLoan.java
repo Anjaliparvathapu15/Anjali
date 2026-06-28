@@ -2,15 +2,24 @@ package com.oops.inheritance;
 
 
 public class PersonalLoan extends Loan{
+	@Override
+	public double getROI(){
+		return 8.5;
+	}
 	
-	 void getPersonalLoanDocInfo() {
+	static  void getPersonalLoanDocInfo() {
 		 System.out.println("Submitted all the documents successfully!!");
 	 }
 	public static void main(String[] args) {
 		System.out.println("Welcome to SBH  Personal Loan Banking !!");
 		//Scenario:By using child object or child reference ,we can call both
 		//Parent class functionalities as well as child class functionalities
-		PersonalLoan p1=new PersonalLoan();
+		LoanInterface p1=new PersonalLoan();
+		//Loan p=new PersonalLoan();
+		//p.hello();
+		//p.getPersonalLoanDocInfo();
+		//Loan l=new Loan();
+		//l.getPersonalLoanDocInfo();
 		int cibilScore=p1.getCibilScore();
 		double salary=p1.getCustomerSalary();
 		int age=p1.getCustomerAge();
@@ -21,7 +30,7 @@ public class PersonalLoan extends Loan{
 			System.out.println("Your Personal Loan ROI is :"+p1.getROI());
 			System.out.println("Your Address Details : ");
 			System.out.println(p1.getCustomerAddress());
-			p1.getPersonalLoanDocInfo();
+			getPersonalLoanDocInfo();
 			
 		}
 		else {

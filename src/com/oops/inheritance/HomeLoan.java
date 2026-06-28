@@ -1,17 +1,17 @@
 package com.oops.inheritance;
 
 public class HomeLoan extends Loan {
-	void getHomeLoanDocInfo() {
+	static void getHomeLoanDocInfo() {
 		System.out.println("All Documents Submitted Successfully");
 	}
 	@Override
-	double getROI(){
+	public double getROI(){
 		return 8.5;
 	}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to SBH  Personal Loan Banking !!");
-		HomeLoan h1 = new HomeLoan();
+		LoanInterface h1 = new HomeLoan();
 		int cibilScore = h1.getCibilScore();
 		double salary = h1.getCustomerSalary();
 		int age = h1.getCustomerAge();
@@ -22,7 +22,7 @@ public class HomeLoan extends Loan {
 			System.out.println("Your Home Loan ROI is :" + h1.getROI());
 			System.out.println("Your Address Details : ");
 			System.out.println(h1.getCustomerAddress());
-			h1.getHomeLoanDocInfo();
+			getHomeLoanDocInfo();
 
 		} else {
 			System.out.println("Sorry !! Your Personal Loan got Rejected");

@@ -2,40 +2,40 @@ package com.oops.inheritance;
 
 import java.util.Scanner;
 
-public class Loan {
+public class Loan implements LoanInterface {
 static Scanner sc= new Scanner(System.in);
 	
-	boolean isValidAaddar() {
+	public boolean isValidAaddar() {
 		System.out.println("Enter your Aadhar :");
 		String aadhar=sc.next();
 		return aadhar.matches("\\d{12}");
 	}
-	boolean isValidPan() {
+	public boolean isValidPan() {
 		System.out.println("Enter your Pan : ");
 		String pan=sc.next();
 		return pan.matches("[A-Z]{5}[0-9]{4}[A-Z]");
 	}
-	boolean isValidPhone() {
+	public boolean isValidPhone() {
 		System.out.println("Enter your Phone :");
 		String phone=sc.next();
 		return phone.matches("[6-9]\\d{9}");
 	}
-	double getCustomerSalary(){
+	public double getCustomerSalary(){
 		System.out.println("Enter your Salary :");
 		double salary=sc.nextInt();
 		return salary;
 	}
-	int getCustomerAge() {
+	public int getCustomerAge() {
 		System.out.println("Enter your Age :");
 		int age=sc.nextInt();
 		return age;
 	}
-	int getCibilScore() {
+	public int getCibilScore() {
 		System.out.println("Enter your Cibil Score :");
 		int cibilScore=sc.nextInt();
 		return cibilScore;
 	}
-	String getCustomerAddress() {
+	public String getCustomerAddress() {
 		String address=null;
 		System.out.println("Enter your Flat number :");
 		String fno=sc.next();
@@ -56,7 +56,7 @@ static Scanner sc= new Scanner(System.in);
 		return address;
 		
 	}
-	 double getROI(){
+	 public double getROI(){
 		double roi= 12.5;
 		int cibilScore=getCibilScore();
 		if(cibilScore>=300 && cibilScore<=599) {

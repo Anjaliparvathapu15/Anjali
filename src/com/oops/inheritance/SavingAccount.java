@@ -14,7 +14,9 @@ public class SavingAccount extends Account{
 	public static void main(String[] args) {
 		SavingAccount s1=new SavingAccount();
 		System.out.println("SAVING ACCOUNT");
-		
+		s1.customerDetail();
+		s1.selectChoice();
+		s1.showSavingBenefits();
 		
 
 	}
