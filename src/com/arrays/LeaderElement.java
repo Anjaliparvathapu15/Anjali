@@ -31,6 +31,15 @@ public class LeaderElement {
 			}
 
 	}
+		int n=arr.length;
+		int leader=arr[n-1];
+		System.out.print(leader);
+		for(int i=n-2;i>=0;i--) {
+			if(arr[i]>=leader) {
+				leader=arr[i];
+				System.out.print(" "+leader);
+			}
+		}
 
 	}
 }

@@ -9,7 +9,7 @@ public class ArrayStringContainsMethod {
 		num[1]="Teja";
 		num[2]="Vinay";
 		for(int i=0;i<num.length;i++) {
-			if(num[i].contains("e")) {
+			if(num[i].contains("A")) {
 				System.out.println(num[i]);
 			}
 		}
