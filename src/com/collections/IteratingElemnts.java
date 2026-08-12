@@ -18,6 +18,7 @@ public class IteratingElemnts {
 		System.out.println("***************************************************");
 		Iterator <String> itr=c1.iterator();
 		while(itr.hasNext()) {
+//			c1.add("aaaaa");
 			System.out.println(itr.next());
 		}
 		System.out.println("****************************************************");

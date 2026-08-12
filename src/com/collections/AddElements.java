@@ -21,6 +21,7 @@ public class AddElements {
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);
+//		System.out.println(c3.remove("Anjali"));
 //		System.out.println(c2.equals(c3));
 //		System.out.println(c1.hashCode());
 //		System.out.println(c2.hashCode());

@@ -5,12 +5,14 @@ public class ListDemo1 {
 
 	public static void main(String[] args) {
 		List<Integer>li=new ArrayList<>();
+		
 		li.add(21);
 		li.add(1,2000);
 		li.add(24);
 		li.add(27);
 		li.add(2,22);
 		li.set(0,800);
+//		System.out.println(li.set(0,21)); return the previous elemet in that position
 		System.out.println(li.get(0));
 		List<Integer>l1=new ArrayList<>();
 		l1.add(2);

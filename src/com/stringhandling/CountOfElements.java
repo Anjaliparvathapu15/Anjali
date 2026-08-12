@@ -1,6 +1,6 @@
 package com.stringhandling;
 
-public class FrequencyCount {
+public class CountOfElements {
 
 	public static void main(String[] args) {
 		String str="aaabbc";
@@ -8,12 +8,13 @@ public class FrequencyCount {
 		for(int i=0;i<str.length();i++) {
 			count[str.charAt(i)]++;
 		}
-		for(int i=0;i<str.length();i++) {
-			if(count[str.charAt(i)]!=0) {
-			System.out.print(str.charAt(i)+""+count[str.charAt(i)]);
-			count[str.charAt(i)]=0;
+		for(int i=0;i<count.length;i++) {
+			if(count[i]>0) {
+				System.out.print((char)i+""+count[i]);
+//				count[i]=0;
 			}
 		}
+
 	}
 
 }
